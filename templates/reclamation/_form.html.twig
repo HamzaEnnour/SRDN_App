@@ -1,0 +1,69 @@
+
+
+
+
+
+<div class="container">
+
+    <div class="clearfix">
+        <div class="pull-left">
+            <h2 class="text-blue h2">Reclamation</h2>
+        </div>
+
+    </div>
+    <br>
+    {{ form_start(form) }}
+        <div class="form-group row">
+            <label class="col-sm-12 col-md-2 col-form-label">{{ form_label(form.fullname) }}</label>
+            <div class="col-sm-12 col-md-10">
+                {{ form_widget(form.fullname) }}
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-12 col-md-2 col-form-label">{{ form_label(form.age) }}</label>
+            <div class="col-sm-12 col-md-10">
+                {{ form_widget(form.age) }}
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-12 col-md-2 col-form-label">{{ form_label(form.cin) }}</label>
+            <div class="col-sm-12 col-md-10">
+                {{ form_widget(form.cin) }}
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-12 col-md-2 col-form-label">{{ form_label(form.adress) }}</label>
+            <div class="col-sm-12 col-md-10">
+                {{ form_widget(form.adress) }}
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-12 col-md-2 col-form-label">{{ form_label(form.phone) }}</label>
+            <div class="col-sm-12 col-md-10">
+                {{ form_widget(form.phone) }}
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-12 col-md-2 col-form-label">{{ form_label(form.description) }}</label>
+            <div class="col-sm-12 col-md-10">
+                {{ form_widget(form.description) }}
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-12 col-md-2 col-form-label">{{ form_label(form.source) }}</label>
+            <div class="col-sm-12 col-md-10">
+                {{ form_widget(form.source) }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="input-group mb-0">
+                    <input class="btn btn-primary btn-lg btn-block" type="submit"  value="{{ button_label|default('Save') }}">
+                </div>
+            </div>
+        </div>
+
+
+    {{ form_end(form) }}
+    </div>
+
